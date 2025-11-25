@@ -17,6 +17,12 @@
  npm install
  ```
 
+### Caso nao tenha o TypeScript instalado, utilize o seguinte comando:
+
+```bash
+npm install -g typescript
+ ```
+
 ### 3. Compile e execute a aplicação:
 
 Para compilar o código TypeScript, execute:
