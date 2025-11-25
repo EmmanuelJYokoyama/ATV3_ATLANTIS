@@ -3,7 +3,6 @@ import Construtor from "../interfaces/construtor";
 import Acomodacao from "../models/acomodacao";
 
 export default class ConstrutorAcomodacao implements Construtor<Acomodacao>{
-    // Renamed internals to reduce textual similarity while keeping API unchanged
     private nomeTipo: NomeAcomodacao = NomeAcomodacao.SolteiroSimples
     private qtdeSolteiro: Number = 0
     private qtdeCasal: Number = 0
@@ -19,7 +18,6 @@ export default class ConstrutorAcomodacao implements Construtor<Acomodacao>{
     public set Garagem(garagem: Number) { this.vagasGaragem = garagem }
 
     construir(): Acomodacao {
-        // Return inline to simplify flow
         return new Acomodacao(
             this.nomeTipo,
             this.qtdeSolteiro,

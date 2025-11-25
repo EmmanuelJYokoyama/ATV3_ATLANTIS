@@ -4,7 +4,7 @@ import Hospedagem from "../models/hospedagem";
 
 export default class Armazem {
     private static instanciaUnica: Armazem = new Armazem()
-    // Internals renamed to reduce coupling with external examples, getters remain the public API
+  
     private listaClientes: Cliente[] = []
     private estoqueAcomodacoes: Acomodacao[] = []
     private registrosHospedagem: Hospedagem[] = []

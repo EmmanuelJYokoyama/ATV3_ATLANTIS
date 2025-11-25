@@ -18,7 +18,6 @@ export default class Principal extends Processo {
         this.menu.mostrar()
         this.opcao = this.entrada.receberNumero('Qual a opção desejada?')
 
-        // Dispatcher to reduce switch verbosity while keeping behavior
         const acoes: { [k: number]: () => void } = {
             1: () => { this.processo = new TipoCadastroCliente(); this.processo.processar() },
             2: () => { this.processo = new EditarCliente(); this.processo.processar() },
